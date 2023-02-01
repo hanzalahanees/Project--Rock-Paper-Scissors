@@ -61,6 +61,12 @@ function playRound(playerSelection) {
   document.getElementById('result').innerHTML = result;
   return;
 }
+//Add event with buttons for choose weapons
+btns.forEach(btn => {
+  btn.addEventListener('click', function () {
+    playRound(btn.value.toLowerCase())
+  });
+})
 
 
 
