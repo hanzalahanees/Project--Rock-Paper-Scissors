@@ -4,6 +4,13 @@ let computerScore = 0;
 const btns = document.querySelectorAll('input');
 const playAgain = document.getElementById('playAgain');
 
+//Disable Buttons
+function disable() {
+  btns.forEach(btn => {
+      btn.disabled = true
+  });
+}
+
 
 
 
