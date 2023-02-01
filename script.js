@@ -16,6 +16,52 @@ function computerPlay() {
   return select[Math.floor(Math.random() * 3) + 1];
 }
 
+function playRound(playerSelection) {
+  let computerSelection = computerPlay();
+  let userScore = "";
+  let compScore = "";
+  let result = "";
+
+  if ((playerSelection == "rock" && computerSelection == "scissors") ||
+    (playerSelection == "paper" && computerSelection == "rock") ||
+    (playerSelection == "scissors" && computerSelection == "paper")) {
+
+    playerScore += 1;
+    result = `You win! ${playerSelection} beats ${computerSelection}`;
+    userScore = `${playerScore}`;
+    compScore = `${computerScore}`;
+
+    if (playerScore == 5) {
+      result = "You won the game !!!";
+      disable();
+      playAgain.style.visibility = 'visible';
+    }
+
+  } else if (playerSelection == computerSelection) {
+
+    result = "It's a tie";
+    userScore = `${playerScore}`;
+    compScore = `${computerScore}`;
+
+  } else {
+
+    computerScore += 1;
+    result = `You lose! ${computerSelection} beats ${playerSelection}`;
+    compScore = `${computerScore}`;
+    userScore = `${playerScore}`;
+
+    if (computerScore == 5) {
+      result = "You lost the game !!!";
+      disable();
+      playAgain.style.visibility = 'visible';
+    }
+  }
+  document.getElementById('userScore').innerHTML = userScore;
+  document.getElementById('compScore').innerHTML = compScore;
+  document.getElementById('result').innerHTML = result;
+  return;
+}
+
 
 
 
