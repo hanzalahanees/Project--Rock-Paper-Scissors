@@ -7,8 +7,13 @@ const playAgain = document.getElementById('playAgain');
 //Disable Buttons
 function disable() {
   btns.forEach(btn => {
-      btn.disabled = true
+    btn.disabled = true
   });
+}
+
+function computerPlay() {
+  let select = ["", "rock", "paper", "scissors"];
+  return select[Math.floor(Math.random() * 3) + 1];
 }
 
 
