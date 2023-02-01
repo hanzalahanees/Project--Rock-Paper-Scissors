@@ -1,4 +1,8 @@
-
+//Declaration
+let playerScore = 0;
+let computerScore = 0;
+const btns = document.querySelectorAll('input');
+const playAgain = document.getElementById('playAgain');
 
 
 
