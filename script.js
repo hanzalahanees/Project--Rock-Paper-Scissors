@@ -1,3 +1,11 @@
+
+
+
+
+
+
+
+/* Old Code for console 
 // randomly generates Rock, Paper or Scissors
 
 function getComputerChoice() {
@@ -38,3 +46,4 @@ function game() {
   }
 
   game();
+  */
