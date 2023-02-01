@@ -68,6 +68,13 @@ btns.forEach(btn => {
   });
 })
 
+// Game play again and again button
+playAgain.addEventListener('click',function(){
+  window.location.reload();
+});
+
+
+
 
 
 
