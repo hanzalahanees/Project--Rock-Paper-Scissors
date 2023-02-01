@@ -73,6 +73,10 @@ playAgain.addEventListener('click',function(){
   window.location.reload();
 });
 
+/* ***************************
+ RPS-UI has been completed
+*******************************/
+
 
 
 
