@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project: Rock Paper Scissors</title>
 </head>
+
 <body>
     <!-- console Game -->
 
@@ -16,10 +18,29 @@
         <input type="button" value="Rock">
         <input type="button" value="Paper">
         <input type="button" value="Scissors">
-        </div>
+    </div>
 
+    <h2>First to score 5 points wins the game !!!!</h2>
+
+    <div class="labels">
+        <span id="playerLabel">Player scores</span>
+        <span id="compLabel">Computer scores</span>
+    </div>
+
+    <div class="scores">
+        <div id="userScore">0</div>
+        <div id="compScore">0</div>
+    </div>
+
+    <div id="resultsLabel">Results</div>
+    <div id="result"></div>
+
+    <div>
+        <button id="playAgain">Play Again!</button>
+    </div>
 
 
     <script src="script.js"></script>
 </body>
+
 </html>
